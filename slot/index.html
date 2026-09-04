@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Winkta Slot: guida a RTP, bonus e giochi online</title>
+<meta name="description" content="Scopri Winkta Slot: RTP, volatilità, provider, bonus, pagamenti, demo e gioco responsabile. Guida alle slot online per mobile e desktop.">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="canonical" href="https://winkta.it.com/slot/">
+<link rel="alternate" hreflang="it-it" href="https://winkta.it.com/slot/">
+<link rel="alternate" hreflang="x-default" href="https://winkta.it.com/">
+<style>
+:root{--blue:#2536c4;--blue-d:#1b1f7a;--green:#54c168;--red:#ef5b5b;--ink:#1a1d2e;--mut:#7a7f96;--line:#e7e9f2;--bg:#f4f5f9}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1280px;margin:0 auto;padding:0 16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:0;border-radius:999px;
+  padding:11px 22px;font-weight:700;font-size:14px;cursor:pointer;transition:.15s;white-space:nowrap}
+.btn.sm{padding:8px 16px;font-size:13px}
+.btn.primary{background:var(--blue);color:#fff} .btn.primary:hover{background:#1d2ba8}
+.btn.green{background:var(--green);color:#fff} .btn.green:hover{filter:brightness(1.05)}
+.btn.red{background:var(--red);color:#fff} .btn.red:hover{filter:brightness(1.05)}
+.btn.ghost{background:transparent;border:1.5px solid var(--line);color:var(--mut)} .btn.ghost:hover{border-color:var(--blue);color:var(--blue)}
+
+/* header */
+.header{background:#fff;border-bottom:1px solid var(--line)}
+.headerIn{display:flex;align-items:center;gap:18px;height:72px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:24px;color:var(--blue);letter-spacing:.5px}
+.logo .mark{position:relative;width:30px;height:30px;flex-shrink:0}
+.logo .mark i{position:absolute;width:13px;height:13px;border-radius:3.5px}
+.logo .mark i:nth-child(1){top:0;left:8px;background:var(--green)}
+.logo .mark i:nth-child(2){bottom:0;left:0;background:var(--blue)}
+.logo .mark i:nth-child(3){bottom:0;right:0;background:var(--red)}
+.headerActions{margin-left:auto;display:flex;align-items:center;gap:12px}
+.oppure{color:var(--mut);font-size:13px}
+.socials{display:flex;gap:10px;align-items:center}
+.socials a{width:26px;height:26px;display:grid;place-items:center;color:var(--mut)}
+
+/* subheader / banner */
+.subheader{background:linear-gradient(135deg,#2c39c9,#1a1e72);color:#fff;position:relative;overflow:hidden}
+.subheader::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.06) 1.5px,transparent 1.5px);background-size:22px 22px;opacity:.5}
+.nav{position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:8px 26px;padding:16px 0;justify-content:center}
+.navItem{color:#cdd3ff;font-weight:700;font-size:15px;letter-spacing:.3px}
+.navItem:hover{color:#fff} .navItem.active{color:var(--green)}
+.flag{width:26px;height:18px;border-radius:3px;background:linear-gradient(90deg,#008c45 33%,#fff 33% 66%,#cd212a 66%);display:inline-block}
+.banner{position:relative;border-radius:16px;overflow:hidden;min-height:340px;margin-bottom:14px;
+  display:flex;align-items:center;background:linear-gradient(120deg,#2730b5,#1a1e72)}
+.bannerImg{position:absolute;right:0;top:0;bottom:0;width:66%;z-index:0}
+.bannerImg img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.banner::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(90deg,#1a1e72 0%,#1a1e72 30%,rgba(26,30,114,.55) 44%,transparent 56%)}
+.bannerImg.bph{background:linear-gradient(120deg,#2c39c9,#3a47d6 55%,#7c3aed)}
+.bannerImg.bph::after{content:"3000 € + 450 GIRI";position:absolute;right:8%;top:50%;transform:translateY(-50%);
+  color:#ffd84d;font-weight:800;font-size:40px;letter-spacing:1px}
+.bannerText{position:relative;z-index:2;padding:0 0 0 44px;max-width:44%}
+.bannerText h1{font-size:32px;line-height:1.18;font-weight:800;margin-bottom:22px;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+.bannerText h1 b{color:#ffd84d}
+.dots{position:absolute;bottom:18px;left:0;right:0;z-index:1;display:flex;gap:7px;justify-content:center}
+.dots i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.35)} .dots i.on{background:#fff}
+
+/* intro H1 + лид */
+.intro{padding:22px 0 6px}
+.intro h1{font-size:26px;font-weight:800;margin-bottom:8px}
+.intro p{color:#3a3f57;max-width:900px}
+
+/* games toolbar */
+.gamesBar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.gamesBarIn{display:flex;align-items:center;gap:8px 28px;flex-wrap:wrap;padding:16px 0}
+.tab{font-weight:700;color:var(--mut);font-size:15px} .tab:hover{color:var(--ink)} .tab.active{color:var(--blue)}
+.fav{color:#cbd0e3;font-size:20px}
+.search{margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--bg);border:1px solid var(--line);
+  border-radius:999px;padding:9px 16px;min-width:260px;color:var(--mut)}
+.search input{border:0;background:none;outline:none;font:inherit;width:100%}
+
+/* layout: контент + сайдбар */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:22px;align-items:start}
+.content{min-width:0}
+
+/* grid */
+.games{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;padding:24px 0}
+.tmb{position:relative;transition:.15s}
+.tmb:hover{transform:translateY(-3px)}
+.tmbImg{aspect-ratio:400/254;background:#eef0f7;overflow:hidden;position:relative;border-radius:12px;
+  box-shadow:0 1px 4px rgba(20,25,60,.1)}
+.tmbImg img{width:100%;height:100%;object-fit:cover;display:block}
+.tmbImg.ph{display:grid;place-items:center;background:linear-gradient(135deg,#3a47d6,#7c3aed)}
+.tmbImg.ph::after{content:attr(data-t);color:#fff;font-weight:700;font-size:12px;text-align:center;padding:8px;opacity:.92}
+/* кнопки поверх постера на hover */
+.tmbOver{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+  background:rgba(16,20,46,.72);opacity:0;transition:.15s}
+.tmb:hover .tmbOver{opacity:1}
+.tmbOver .btn{min-width:96px;padding:8px 0}
+.tmbOver .btn.primary{background:var(--green)} .tmbOver .btn.primary:hover{filter:brightness(1.06)}
+.tmbOver .btn.demo{background:transparent;border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.tmbOver .btn.demo:hover{background:rgba(255,255,255,.15)}
+.tmbTitle{font-size:12.5px;font-weight:600;padding:8px 4px 2px;line-height:1.25;text-align:center;
+  display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.new{position:absolute;top:8px;left:8px;z-index:2;background:#ffb020;color:#3a2600;font-size:10px;
+  font-weight:800;padding:2px 8px;border-radius:6px;text-transform:uppercase}
+
+/* welcome bonus — копия widgetPlaceFirst (фон-плитки + петух справа) */
+.welcomeBonus{grid-column:1/-1;position:relative;overflow:hidden;border-radius:16px;min-height:160px;
+  display:flex;flex-direction:column;justify-content:center;gap:16px;padding:0 200px 0 40px;color:#fff;
+  background:linear-gradient(105deg,#3640d8 0%,#8a3bd6 42%,#ef5b5b 74%,#ff9b3c 100%)}
+.wbBg{position:absolute;inset:0;z-index:0;opacity:.85}
+.wbBg svg{width:100%;height:100%}
+.wbTitle{position:relative;z-index:1;font-size:30px;font-weight:800;line-height:1.18;max-width:560px;text-shadow:0 2px 8px rgba(0,0,0,.25)}
+.wbTitle span:last-child{color:#ffe14d}
+.wbBtn{position:relative;z-index:1;align-self:flex-start;background:#fff;color:var(--blue)} .wbBtn:hover{background:#eef0ff}
+.wbChar{position:absolute;right:30px;bottom:0;z-index:1;width:210px;height:100%;object-fit:contain;object-position:bottom right;
+  filter:drop-shadow(0 6px 16px rgba(0,0,0,.28))}
+
+/* sidebar 1:1 */
+.sidebar{display:flex;flex-direction:column;gap:16px;padding:24px 0}
+.sidebar>*{flex-shrink:0}
+/* strip widget */
+.sbStrip{position:relative;overflow:hidden;border-radius:14px;min-height:150px;padding:14px 16px;
+  background:linear-gradient(135deg,#5a2da8,#9b2fb0 60%,#e0457f);color:#fff}
+.sbStripHead{font-weight:800;font-size:15px;margin-bottom:10px;position:relative;z-index:1}
+.sbStripPromo{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;gap:5px;max-width:62%}
+.sbStripTitle{font-size:17px;font-weight:800} .sbStripInfo{font-size:11.5px;opacity:.92;line-height:1.3;margin-bottom:6px}
+.sbStripPromo .btn{background:#fff;color:#9b2fb0}
+.sbStripGirl{position:absolute;right:-6px;bottom:0;width:120px;height:140px;object-fit:contain;object-position:bottom;z-index:0}
+/* bonus 50% */
+.sbBonus{background:linear-gradient(135deg,#2f3bd4,#7c3aed);color:#fff;border-radius:14px;padding:18px;text-align:center}
+.sbBonusTop{font-size:20px;font-weight:800} .sbBonusTop b{color:#ffe14d}
+.sbBonusDep{font-size:13px;opacity:.9;margin:6px 0 12px} .sbBonusDep span{font-weight:800}
+.sbCount small{display:block;font-size:11px;opacity:.85;margin-bottom:4px}
+.sbTimer{display:flex;justify-content:center;align-items:center;gap:4px;font-weight:800;font-size:22px;margin-bottom:14px}
+.sbTimer i{background:rgba(255,255,255,.18);border-radius:7px;padding:5px 9px;font-style:normal}
+.sbBonus .btn{width:100%;background:#fff;color:var(--blue)}
+.sbMore{display:block;margin-top:10px;font-size:12px;color:#fff;opacity:.9;text-decoration:underline}
+/* tornei */
+.sbTour,.sbWins{background:#fff;border-radius:14px;box-shadow:0 1px 3px rgba(20,25,60,.08);padding:16px}
+.sbHead{font-weight:800;font-size:15px;margin-bottom:12px}
+.sbTourItem{display:none} .sbTourItem.on{display:block}
+.sbTourHead{display:flex;gap:12px;margin-bottom:12px;color:inherit}
+.sbTourHead img{width:64px;height:64px;border-radius:10px;object-fit:cover;flex-shrink:0;background:#eef0f7}
+.sbTourHead>div{display:flex;flex-direction:column;gap:1px;min-width:0}
+.sbTourCap{font-size:11px;color:var(--mut);font-weight:700;text-transform:uppercase}
+.sbTourName{font-weight:800;font-size:14px}
+.sbTourFond{font-size:12px;color:var(--mut)} .sbTourFond b{color:var(--green);font-size:13px}
+.sbTourEnds{font-size:11px;color:var(--mut)}
+.sbTourTbl{list-style:none;margin:0 0 12px;font-size:12px}
+.sbTourTbl li{display:grid;grid-template-columns:18px 1fr auto;gap:8px;padding:4px 0;border-top:1px solid var(--line)}
+.sbTourTbl li.h{color:var(--mut);font-size:10px;text-transform:uppercase;font-weight:700;border-top:0}
+.sbTourTbl li span:first-child{color:var(--mut);font-weight:700} .sbTourTbl b{font-variant-numeric:tabular-nums}
+.sbTour .btn,.sbWins .btn{width:100%}
+.sbTabs{display:flex;justify-content:center;gap:8px;margin-top:12px}
+.sbTabs span{width:26px;height:26px;display:grid;place-items:center;border-radius:7px;background:var(--bg);
+  color:var(--mut);font-weight:700;font-size:13px;cursor:pointer}
+.sbTabs span.on{background:var(--blue);color:#fff}
+/* migliori vincite */
+.sbWinsList{list-style:none;margin:0 0 12px}
+.sbWinsList li{display:flex;align-items:center;gap:10px;padding:8px 0;border-top:1px solid var(--line)}
+.sbWinN{color:var(--mut);font-weight:700;font-size:12px;width:14px}
+.sbWinsList img{width:46px;height:30px;border-radius:6px;object-fit:cover;background:#eef0f7;flex-shrink:0}
+.sbWinInfo{display:flex;flex-direction:column;min-width:0;flex:1}
+.sbWinInfo span{color:var(--mut);font-size:12px} .sbWinInfo b{font-size:13px;color:var(--green)}
+/* news */
+.sbNews{position:relative;display:block;overflow:hidden;background:linear-gradient(135deg,#1b1f7a,#2f3bd4);
+  color:#fff;border-radius:14px;padding:16px 18px;min-height:96px}
+.sbNewsTag{position:relative;z-index:1;font-size:11px;opacity:.85;text-transform:uppercase;font-weight:700}
+.sbNewsTitle{position:relative;z-index:1;display:block;font-size:16px;font-weight:800;margin-top:4px;max-width:65%}
+.sbNewsImg{position:absolute;right:0;top:0;height:100%;width:auto;object-fit:cover;opacity:.9}
+
+/* SEO */
+.seo{background:#fff;border-top:1px solid var(--line);padding:36px 0;margin-top:20px}
+.seo h2{font-size:21px;margin:22px 0 10px} .seo h2:first-child{margin-top:0}
+.seo p{color:#3a3f57;margin-bottom:12px;max-width:880px}
+.seo .disc{font-size:13px;color:var(--mut);background:var(--bg);border-radius:10px;padding:14px 16px;margin-top:18px}
+
+/* footer (синий корп) */
+.footer{background:var(--blue);color:#d3d8ff;padding:30px 0 26px;font-size:13px;margin-top:30px}
+.footer .wrap{display:flex;flex-direction:column;gap:22px}
+.payRow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.16)}
+.payRow img{height:30px;width:auto;max-width:64px;object-fit:contain;flex-shrink:0}
+.payRow .crypto{color:#aeb6ff;font-weight:700;font-size:12px;letter-spacing:.5px;margin-left:auto}
+@media(max-width:680px){.payRow .crypto{margin-left:0;width:100%;margin-top:6px}}
+.fnav{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.fnav h4{color:#fff;font-size:14px;margin-bottom:10px}
+.fnav a{display:block;color:#bcc3ff;padding:3px 0;font-size:13px} .fnav a:hover{color:#fff}
+.providers{display:flex;flex-wrap:wrap;gap:8px;padding:18px 0;border-top:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16)}
+.prov{background:rgba(255,255,255,.1);color:#cdd2ff;font-size:11.5px;padding:5px 11px;border-radius:6px}
+.fbottom{display:flex;align-items:flex-start;gap:12px;color:#b6bcf5;font-size:12px;line-height:1.5}
+.age{flex-shrink:0;display:inline-grid;place-items:center;width:34px;height:34px;border:2px solid #ff9d9d;
+  color:#ff9d9d;border-radius:50%;font-weight:800;font-size:13px}
+.copy{color:#9aa3e0;font-size:12px}
+@media(max-width:680px){.fnav{grid-template-columns:1fr 1fr}.payRow .crypto{margin-left:0;width:100%}}
+
+@media(max-width:1100px){.layout{grid-template-columns:1fr}.sidebar{position:static;flex-direction:row;flex-wrap:wrap}.sidebar>*{flex:1;min-width:240px}}
+@media(max-width:680px){.games{grid-template-columns:repeat(2,1fr)}.welcomeBonus{flex-direction:column;text-align:center;padding:18px;min-height:auto}.wbChar{width:110px;height:110px}.headerIn{height:60px}.logo{font-size:20px}.headerActions .btn{padding:9px 14px;font-size:13px}.oppure,.socials{display:none}.bannerText{max-width:80%}.bannerText h1{font-size:22px}.search{min-width:0;flex:1}.fnav{grid-template-columns:1fr 1fr}}
+</style>
+<style>
+.subTop{background:linear-gradient(120deg,#2730b5,#1a1e72);padding-bottom:18px}
+.crumbs{font-size:12px;color:#bcc3ff;padding:14px 0 0}.crumbs a{color:#cdd2ff}.crumbs b{color:#fff}
+.subHero{position:relative;z-index:1;padding:14px 0 4px}
+.subHero h1{color:#fff;font-size:30px;font-weight:800;line-height:1.2;max-width:820px}
+.clusterNav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.clusterNavIn{display:flex;gap:6px 22px;flex-wrap:wrap;padding:13px 0;font-size:14px}
+.clusterNav a{color:var(--mut);font-weight:700}.clusterNav a:hover{color:var(--ink)}.clusterNav a.on{color:var(--blue)}
+.article{max-width:860px;padding:26px 0 10px}
+.article h2{font-size:22px;margin:26px 0 10px}.article h3{font-size:17px;margin:18px 0 8px}
+.article p{color:#33384e;margin-bottom:13px}
+.article ul{margin:0 0 14px 20px}.article li{margin-bottom:6px;color:#33384e}
+.article a{color:var(--blue);font-weight:600}
+.article .tbl{overflow-x:auto;margin:0 0 16px}
+.article table{width:100%;border-collapse:collapse;font-size:14px}
+.article th,.article td{border:1px solid var(--line);padding:9px 12px;text-align:left}
+.article th{background:var(--bg);font-weight:700}
+.article .faq{border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px}
+.article .faq summary{font-weight:700;cursor:pointer}.article .faq p{margin:8px 0 0}
+.ctaBox{background:linear-gradient(120deg,#2f3bd4,#7c3aed);color:#fff;border-radius:14px;padding:20px 24px;margin:22px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.ctaBox b{color:#ffe14d}.ctaBox .btn{background:#fff;color:var(--blue)}
+.clusterFoot{display:flex;gap:8px 18px;flex-wrap:wrap;padding:18px 0;border-top:1px solid var(--line);font-size:13px}
+.clusterFoot a{color:var(--blue);font-weight:600}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://winkta.it.com/"}, {"@type": "ListItem", "position": 2, "name": "Winkta Slot: Guida alle Slot Online", "item": "https://winkta.it.com/slot/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qual è l'RTP medio delle slot?", "acceptedAnswer": {"@type": "Answer", "text": "Tra il 95% e il 97%. Titoli come Sweet Bonanza (96,51%) e Gates of Olympus (96,50%) vanno oltre la soglia del 96%."}}, {"@type": "Question", "name": "Si può giocare gratis in modalità demo?", "acceptedAnswer": {"@type": "Answer", "text": "Molti titoli offrono la demo con crediti virtuali, perfetta per testare volatilità e funzioni bonus senza rischiare un euro. La disponibilità dipende dal singolo provider e dalle condizioni della piattaforma."}}, {"@type": "Question", "name": "Quali slot hanno più probabilità di vincita?", "acceptedAnswer": {"@type": "Answer", "text": "Quelle con RTP sopra il 96% restituiscono di più in teoria, sul lungo periodo. Ma attento: RTP alto non è sinonimo di vincita singola più grossa, che dipende dalla volatilità e dai limiti di payout. E comunque niente è garantito: ogni giro se lo gestisce l'RNG."}}, {"@type": "Question", "name": "Esiste un momento migliore per giocare?", "acceptedAnswer": {"@type": "Answer", "text": "No, è una leggenda. Le slot usano un generatore di numeri casuali certificato: l'orario, il giorno o la \"slot calda\" non spostano di un millimetro le probabilità."}}, {"@type": "Question", "name": "Quanto durano i prelievi?", "acceptedAnswer": {"@type": "Answer", "text": "Gli e-wallet di norma sono i più rapidi (entro 24 ore dopo l'approvazione), mentre carte e bonifici richiedono 1-5 giorni lavorativi, sempre a verifica KYC completata."}}]}</script>
+<style>
+.xblk{margin:26px 0}
+.xblk h3{font-size:20px;margin:0 0 14px;color:#1a1e72}
+.ximg{display:block;width:100%;aspect-ratio:16/9;height:auto;object-fit:cover;border-radius:14px;margin:6px 0 22px;box-shadow:0 10px 30px rgba(20,24,90,.18)}
+.ximg-sm{display:block;width:100%;max-width:320px;aspect-ratio:16/9;height:auto;object-fit:cover;border-radius:11px;margin:4px 0 18px;box-shadow:0 6px 16px rgba(20,24,90,.14)}
+/* слот-витрина */
+.slotGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.slotCard{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#fff;transition:transform .15s,box-shadow .15s}
+.slotCard:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(20,24,90,.18)}
+.slotCard img{width:100%;aspect-ratio:400/254;object-fit:cover;display:block;background:#0c1030}
+.slotCard .sc-b{padding:11px 12px 13px}
+.slotCard .sc-t{font-weight:800;font-size:13px;color:#101542;line-height:1.25;min-height:33px}
+.slotCard .sc-r{font-size:11px;color:#6b7280;margin:4px 0 10px}
+.slotCard .sc-btns{display:flex;gap:8px}
+.sc-btns a{flex:1;text-align:center;font-size:12.5px;font-weight:800;padding:8px 0;border-radius:8px;text-decoration:none;letter-spacing:.02em}
+.sc-play{background:#12b76a;color:#fff!important}.sc-play:hover{background:#0e9a58}
+.sc-demo{background:#fff;color:#1a1e72!important;border:1.5px solid #ccd5ff}.sc-demo:hover{background:#f2f5ff}
+.slotMore{text-align:center;margin-top:16px}
+.slotMore a{display:inline-block;background:#1a1e72;color:#fff!important;font-weight:800;padding:11px 26px;border-radius:10px;text-decoration:none;font-size:14px}
+/* бонус-карточки */
+.bonusCards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.bCard{background:linear-gradient(150deg,#2730b5,#5b21b6);color:#fff;border-radius:14px;padding:22px 18px;text-align:center}
+.bCard .amt{font-size:26px;font-weight:900;line-height:1.1}
+.bCard .amt b{color:#ffe14d}
+.bCard .sub{font-size:13px;opacity:.92;margin:7px 0 16px}
+.bCard a{display:block;background:#ffe14d;color:#1a1e72!important;font-weight:800;padding:11px 0;border-radius:9px;text-decoration:none;font-size:14px}
+/* app-кнопки */
+.appCards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.appCard{display:flex;align-items:center;gap:15px;border-radius:14px;padding:17px 20px;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.appCard:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(20,24,90,.18)}
+.appCard .ic{flex:0 0 46px;width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center}
+.appCard .ic svg{width:26px;height:26px}
+.appCard>span{display:flex;flex-direction:column;min-width:0}
+.appCard .t1{display:block;font-size:12px;opacity:.85;line-height:1.25}
+.appCard .t2{display:block;font-size:17px;font-weight:800;line-height:1.25;margin-top:2px}
+.appPrimary{background:linear-gradient(135deg,#12b76a,#0e9a58)}
+.appPrimary,.appPrimary .t1,.appPrimary .t2{color:#fff!important}
+.appPrimary .ic{background:rgba(255,255,255,.18)}
+.appDark{background:#14161d}
+.appDark,.appDark .t1,.appDark .t2{color:#fff!important}
+.appDark .ic{background:rgba(255,255,255,.12)}
+.appNote{font-size:12.5px;color:#6b7280;margin-top:12px}
+/* платёжки */
+.payRow{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:16px}
+.payChip{border:1px solid var(--line);border-radius:9px;padding:9px 15px;font-weight:800;font-size:13px;color:#1a1e72;background:#fff}
+/* plinko-блок (светлый, читаемый) */
+.plinkoBox{border:1px solid #e6e9f5;border-radius:14px;overflow:hidden}
+.plinkoBox .ph{background:linear-gradient(135deg,#2730b5,#5b21b6);color:#fff;padding:16px 20px}
+.plinkoBox .ph h3{color:#fff;margin:0 0 4px;font-size:19px}
+.plinkoBox .ph p{margin:0;font-size:14px;color:#eef1ff;opacity:.95}
+.plinkoBox .pboard{background:#1a1e4a;padding:16px 20px 6px;text-align:center}
+.plinkoBox .pboard svg{max-width:360px;display:inline-block}
+.plinkoBox .pb{padding:18px 20px;background:#fff}
+.plinkoBox .pb>.lab{font-size:12px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+.plinkoPay{display:flex;gap:5px}
+.plinkoPay span{flex:1;text-align:center;font-size:12px;font-weight:800;padding:10px 0;border-radius:7px;color:#fff}
+.plinkoHint{display:flex;justify-content:space-between;font-size:11.5px;color:#6b7280;margin-top:7px}
+/* CTA-полоска */
+.ctaMini{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:#eef1ff;border:1px solid #d6ddff;border-radius:12px;padding:15px 20px;margin:24px 0}
+.ctaMini b{color:#2730b5}
+.ctaMini a{background:#12b76a;color:#fff!important;font-weight:800;padding:11px 22px;border-radius:9px;text-decoration:none;white-space:nowrap}
+/* перелинковка кластера на главной */
+.clusterCards{margin:30px 0}
+.clusterCards h3{font-size:20px;color:#1a1e72;margin:0 0 14px}
+.ccGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.ccCard{display:block;border:1px solid var(--line);border-radius:12px;padding:15px 16px;text-decoration:none;background:#fff;transition:transform .15s,box-shadow .15s}
+.ccCard:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(20,24,90,.15)}
+.ccCard .cl{font-weight:800;color:#1a1e72;font-size:15px}
+.ccCard .cd{font-size:12.5px;color:#6b7280;margin-top:3px}
+@media(max-width:760px){.slotGrid{grid-template-columns:repeat(2,1fr)}.bonusCards{grid-template-columns:1fr}.appCards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="header"><div class="wrap headerIn">
+  <a class="logo" href="/"><span class="mark"><i></i><i></i><i></i></span>WINNITA</a>
+  <div class="headerActions">
+    <a class="btn green" href="/referral-link">Registrazione veloce</a>
+    <a class="btn red" href="/referral-link">Accedi</a>
+    <span class="oppure">oppure</span>
+    <span class="socials"><a href="/referral-link" aria-label="Google">G</a><a href="/referral-link" aria-label="TikTok">♪</a><a href="/referral-link" aria-label="X">✕</a></span>
+  </div>
+</div></header>
+<section class="subTop"><div class="wrap">
+  <nav class="nav"><a class="navItem active" href="/referral-link">Casinò</a><a class="navItem" href="/referral-link">Sport</a><a class="navItem" href="/referral-link">VIP Club</a><a class="navItem" href="/referral-link">Tornei</a><a class="navItem" href="/referral-link">Lotteria</a><a class="navItem" href="/referral-link">Negozio</a><a class="navItem" href="/referral-link">Sala della Gloria</a><a class="navItem" href="/referral-link">Scrigni del Tesoro</a><a class="navItem" href="/referral-link">Promozioni</a><span class="flag" title="Italia"></span></nav>
+  <div class="crumbs"><a href="/">Home</a> / <b>Slot</b></div>
+  <div class="subHero"><h1>Winkta Slot: Guida alle Slot Online</h1></div>
+</div></section>
+<div class="clusterNav"><div class="wrap clusterNavIn"><a href="/">Home</a><a href="/slot/" class="on">Slot</a></div></div>
+<main class="wrap">
+  <article class="article">
+<div class="xblk"><h3>Slot popolari da provare</h3><div class="slotGrid"><div class="slotCard"><img src="/assets/games/400e254_web-1657180655.svg" alt="Book of Ra Deluxe" loading="lazy"><div class="sc-b"><div class="sc-t">Book of Ra Deluxe</div><div class="sc-r">Novomatic · RTP 95,10%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/gateofolympus-1686825779.jpg" alt="Gates of Olympus" loading="lazy"><div class="sc-b"><div class="sc-t">Gates of Olympus</div><div class="sc-r">Pragmatic Play · RTP 96,50%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/sweet-bonanza-1686827248.jpg" alt="Sweet Bonanza" loading="lazy"><div class="sc-b"><div class="sc-t">Sweet Bonanza</div><div class="sc-r">Pragmatic Play · RTP 96,48%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/big-bass-splash-1686831159.jpg" alt="Big Bass Splash" loading="lazy"><div class="sc-b"><div class="sc-t">Big Bass Splash</div><div class="sc-r">Pragmatic Play · RTP 96,71%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/crv-9084_400x254_08.svg" alt="Gates of Olympus 1000" loading="lazy"><div class="sc-b"><div class="sc-t">Gates of Olympus 1000</div><div class="sc-r">Pragmatic Play · RTP 96,50%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/joker-s-jewels-1686828127.jpg" alt="Joker's Jewels" loading="lazy"><div class="sc-b"><div class="sc-t">Joker's Jewels</div><div class="sc-r">Pragmatic Play · RTP 96,50%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/spinomenal_story_of_zeus_web.png" alt="Story Of Zeus" loading="lazy"><div class="sc-b"><div class="sc-t">Story Of Zeus</div><div class="sc-r">Spinomenal · RTP 96,00%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/bookofradeluxe6-400-254-1656068095.jpg" alt="Book of Ra Deluxe 6" loading="lazy"><div class="sc-b"><div class="sc-t">Book of Ra Deluxe 6</div><div class="sc-r">Novomatic · RTP 95,03%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/luckyladyscharmdeluxe-400-254-1657631186.jpg" alt="Lucky Lady's Charm Deluxe" loading="lazy"><div class="sc-b"><div class="sc-t">Lucky Lady's Charm Deluxe</div><div class="sc-r">Novomatic · RTP 95,13%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/dolphinspearldeluxe-400-254.jpg" alt="Dolphin's Pearl Deluxe" loading="lazy"><div class="sc-b"><div class="sc-t">Dolphin's Pearl Deluxe</div><div class="sc-r">Novomatic · RTP 95,13%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/crv-9084_400x254_05.svg" alt="Fruit Super Nova" loading="lazy"><div class="sc-b"><div class="sc-t">Fruit Super Nova</div><div class="sc-r">Evoplay · RTP 95,51%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/master-joker-400-254_.jpg" alt="Master Joker" loading="lazy"><div class="sc-b"><div class="sc-t">Master Joker</div><div class="sc-r">Pragmatic Play · RTP 96,31%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/hottripleseven-400-254-1656331232.jpg" alt="Hot Triple Sevens" loading="lazy"><div class="sc-b"><div class="sc-t">Hot Triple Sevens</div><div class="sc-r">Wazdan · RTP 96,00%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/2026-hit-slot_web-1-1773665058.jpg" alt="2026 Hit Slot" loading="lazy"><div class="sc-b"><div class="sc-t">2026 Hit Slot</div><div class="sc-r">Endorphina · RTP 96,00%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/crv-9084_400x254_02.svg" alt="Hell Hot 100" loading="lazy"><div class="sc-b"><div class="sc-t">Hell Hot 100</div><div class="sc-r">Endorphina · RTP 96,00%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/3witchpots_web.png" alt="3 Witch Pots" loading="lazy"><div class="sc-b"><div class="sc-t">3 Witch Pots</div><div class="sc-r">BGaming · RTP 96,60%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/elven_princesses.jpg" alt="Elven Princesses" loading="lazy"><div class="sc-b"><div class="sc-t">Elven Princesses</div><div class="sc-r">Evoplay · RTP 96,00%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/burning-chilli-x_7sl_web_400x254.png" alt="Burning Chilli X" loading="lazy"><div class="sc-b"><div class="sc-t">Burning Chilli X</div><div class="sc-r">BGaming · RTP 96,00%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/bookoframagic-400-254.jpg" alt="Book Of Ra Magic" loading="lazy"><div class="sc-b"><div class="sc-t">Book Of Ra Magic</div><div class="sc-r">Novomatic · RTP 95,03%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div><div class="slotCard"><img src="/assets/games/crv-9084_400x254_06.svg" alt="Coin Win: Hold The Spin" loading="lazy"><div class="sc-b"><div class="sc-t">Coin Win: Hold The Spin</div><div class="sc-r">Gamomat · RTP 95,80%</div><div class="sc-btns"><a class="sc-play" href="/referral-link">Gioca</a><a class="sc-demo" href="/referral-link">Demo</a></div></div></div></div><div class="slotMore"><a href="/referral-link">Vedi tutte le slot »</a></div></div>
+<h2>Cos&#x27;è Winkta Slot e come funziona?</h2>
+<p>Winkta Slot è la sezione slot machine del casinò Winkta. E chi cerca &quot;Winnita&quot;? Nella maggior parte dei casi ha solo sbagliato a digitare: parliamo dello stesso operatore.</p>
+<p>Il meccanismo è quello di sempre. Rulli che girano, linee di pagamento che decidono le combinazioni vincenti e i simboli speciali che cambiano le carte in tavola: i <b>wild</b> (rimpiazzano gli altri simboli) e gli <b>scatter</b> (fanno partire giri gratis o bonus game).</p>
+<p>Quando valuti un titolo, due numeri pesano più di ogni altra cosa:</p>
+<ul><li><b>RTP (Return to Player)</b>: la percentuale di ritorno teorico sul lungo periodo. Sui titoli in catalogo di solito ballano tra il <b>95% e il 97%</b>.</li><li><b>Volatilità</b> (bassa, media o alta): ti dice ogni quanto — e quanto — una slot molla soldi. Volatilità alta vuol dire vincite più rare, ma quando arrivano fanno male.</li></ul>
+<p>Occhio a un malinteso che gira parecchio: un RTP alto <b>non</b> ti garantisce la vincita singola più grossa. La payout massima dipende soprattutto dalla volatilità, dai limiti di vincita e dalla meccanica del gioco — moltiplicatori, jackpot, free spins. RTP e volatilità vanno letti insieme. Mai separati.</p>
+<div class="ctaBox"><div>Bonus di benvenuto fino a <b>3000 € + 450 giri gratis</b> su Winnita.</div><a class="btn" href="/referral-link">Richiedi ora</a></div><h2>Tipi di slot disponibili</h2>
+<p>Il catalogo copre tutte le categorie principali:</p>
+<ul><li><b>Slot classiche a 3 rulli</b>: le &quot;777&quot; in stile bar, con frutta, campane e poche linee di pagamento. Semplicità pura, per chi non vuole fronzoli.</li><li><b>Video slot a 5 rulli</b>: grafica moderna, funzioni bonus, free spin e moltiplicatori. Qui trovi il grosso del catalogo.</li><li><b>Megaways</b>: rulli variabili, con fino a <b>117.649 modi di vincere</b> per singolo giro.</li><li><b>Jackpot progressivi</b>: un montepremi che cresce a ogni puntata degli utenti, con potenziali vincite a sei o sette cifre.</li></ul>
+<div class="ctaMini"><div>Bonus di benvenuto <b>500 € + 200 giri gratis</b> — registrazione in un minuto.</div><a href="/referral-link">Gioca ora »</a></div>
+<h2>Provider di software e giochi in evidenza</h2>
+<p>La qualità di una sezione slot te la fanno i provider, punto. Tra i nomi che riempiono buona parte del catalogo ci sono <b>NetEnt, Pragmatic Play, Play&#x27;n GO e Microgaming</b> (la disponibilità dei singoli titoli può cambiare in base agli accordi in vigore).</p>
+<p>Qualche titolo di punta, con l&#x27;RTP dichiarato:</p>
+<div class="tbl"><table><thead><tr><th>Gioco</th><th>Provider</th><th>RTP</th><th>Volatilità</th></tr></thead><tbody><tr><td>Book of Dead</td><td>Play&#x27;n GO</td><td>96,21%</td><td>Alta</td></tr><tr><td>Starburst</td><td>NetEnt</td><td>96,09%</td><td>Bassa</td></tr><tr><td>Gates of Olympus</td><td>Pragmatic Play</td><td>96,50%</td><td>Alta</td></tr><tr><td>Sweet Bonanza</td><td>Pragmatic Play</td><td>96,51%</td><td>Alta</td></tr></tbody></table></div>
+<p>Prima di puntare, controlla sempre nella scheda del singolo gioco i dati che fanno la differenza: <b>puntata minima e massima, volatilità, moltiplicatore o jackpot massimo, presenza di free spins e disponibilità della modalità demo</b>.</p>
+<div class="xblk"><h3>RTP delle slot più giocate</h3><div class="tbl"><table><thead><tr><th>Slot</th><th>Provider</th><th>RTP</th></tr></thead><tbody><tr><td>Book of Ra Deluxe</td><td>Novomatic</td><td>95,10%</td></tr><tr><td>Gates of Olympus</td><td>Pragmatic Play</td><td>96,50%</td></tr><tr><td>Sweet Bonanza</td><td>Pragmatic Play</td><td>96,48%</td></tr><tr><td>Big Bass Splash</td><td>Pragmatic Play</td><td>96,71%</td></tr><tr><td>Gates of Olympus 1000</td><td>Pragmatic Play</td><td>96,50%</td></tr><tr><td>Joker's Jewels</td><td>Pragmatic Play</td><td>96,50%</td></tr><tr><td>Story Of Zeus</td><td>Spinomenal</td><td>96,00%</td></tr><tr><td>Book of Ra Deluxe 6</td><td>Novomatic</td><td>95,03%</td></tr><tr><td>Lucky Lady's Charm Deluxe</td><td>Novomatic</td><td>95,13%</td></tr><tr><td>Dolphin's Pearl Deluxe</td><td>Novomatic</td><td>95,13%</td></tr></tbody></table></div><p style="font-size:12px;color:#6b7280">Valori RTP indicativi dichiarati dai provider; possono variare per versione.</p></div>
+<h2>Bonus e promozioni per le slot</h2>
+<p>L&#x27;offerta è quella standard del mercato: un <b>bonus di benvenuto</b> che raddoppia il primo deposito (di solito 100% fino a un tetto in euro) e pacchetti di <b>free spins</b> su slot selezionate.</p>
+<p>Attenzione al <b>rollover</b>: prima di prelevare le vincite da bonus di norma devi rigiocare l&#x27;importo tra <b>x30 e x40</b>. E poi ci sono le promo ricorrenti — cashback settimanali, tornei slot, giri gratis del weekend.</p>
+<p>Le percentuali, i tetti e i requisiti che leggi qui sono valori di riferimento del mercato. Controlla sempre i termini aggiornati direttamente sulla piattaforma prima di attivare un&#x27;offerta.</p>
+<h2>Come giocare passo dopo passo</h2>
+<p>1. <b>Registrazione</b>: crea l&#x27;account con email e dati personali.</p>
+<p>2. <b>Verifica KYC</b>: carica un documento d&#x27;identità per sbloccare i prelievi.</p>
+<p>3. <b>Deposito</b>: carta di credito/debito, e-wallet o bonifico bancario, con minimo tipico di <b>10 €</b>.</p>
+<p>4. <b>Scelta della slot e della puntata</b>: imposta il valore per linea o la puntata totale.</p>
+<p>5. <b>Spin</b>: premi il pulsante di giro e al resto pensa l&#x27;RNG.</p>
+<h2>Metodi di pagamento e prelievi</h2>
+<p>I tempi di prelievo dipendono dal metodo che scegli:</p>
+<ul><li><b>E-wallet</b>: di solito i più rapidi, entro 24 ore dopo l&#x27;approvazione.</li><li><b>Carte e bonifici bancari</b>: 1-5 giorni lavorativi.</li></ul>
+<p>In ogni caso il prelievo parte solo dopo aver completato la <b>verifica KYC</b>. I tempi reali possono cambiare in base alle procedure interne dell&#x27;operatore, quindi confermali nella sezione cassa.</p>
+<h2>Versione mobile e compatibilità</h2>
+<p>Le slot sono in <b>HTML5</b> e girano dritte dal browser mobile, senza scaricare niente, su dispositivi <b>iOS e Android</b>. Grafica adattiva, pulsanti pensati per il touch e saldo sincronizzato: giochi in metro, in pausa pranzo o spaparanzato sul divano, senza differenze rispetto al desktop.</p>
+<h2>Gioco responsabile e sicurezza</h2>
+<p>L&#x27;operatore protegge le transazioni con <b>crittografia SSL</b> e mette a disposizione strumenti di gioco responsabile: <b>limiti di deposito</b>, autoesclusione temporanea o permanente e reality check. L&#x27;accesso è riservato ai <b>maggiorenni (18+)</b>.</p>
+<p>Prima di depositare, verifica sempre la licenza. Di solito trovi il <b>numero di licenza e l&#x27;ente che la rilascia nel footer del sito</b>; nelle pagine di termini e condizioni, invece, sono riportati le <b>regole KYC</b>, i <b>limiti di deposito/prelievo</b> e i <b>requisiti di rollover</b> dei bonus. Leggili prima di attivare qualsiasi offerta, non dopo. Le condizioni di tutela cambiano a seconda dell&#x27;ente che rilascia la licenza.</p>
+<p>Se il gioco diventa un problema, esistono risorse di supporto gratuite, come i servizi di aiuto per il gioco d&#x27;azzardo patologico.</p>
+<h2>Domande frequenti su Winkta Slot</h2>
+<details class='faq'><summary>Qual è l&#x27;RTP medio delle slot?</summary><p>Tra il 95% e il 97%. Titoli come Sweet Bonanza (96,51%) e Gates of Olympus (96,50%) vanno oltre la soglia del 96%.</p></details>
+<details class='faq'><summary>Si può giocare gratis in modalità demo?</summary><p>Molti titoli offrono la demo con crediti virtuali, perfetta per testare volatilità e funzioni bonus senza rischiare un euro. La disponibilità dipende dal singolo provider e dalle condizioni della piattaforma.</p></details>
+<details class='faq'><summary>Quali slot hanno più probabilità di vincita?</summary><p>Quelle con RTP sopra il 96% restituiscono di più in teoria, sul lungo periodo. Ma attento: RTP alto non è sinonimo di vincita singola più grossa, che dipende dalla volatilità e dai limiti di payout. E comunque niente è garantito: ogni giro se lo gestisce l&#x27;RNG.</p></details>
+<details class='faq'><summary>Esiste un momento migliore per giocare?</summary><p>No, è una leggenda. Le slot usano un generatore di numeri casuali certificato: l&#x27;orario, il giorno o la &quot;slot calda&quot; non spostano di un millimetro le probabilità.</p></details>
+<details class='faq'><summary>Quanto durano i prelievi?</summary><p>Gli e-wallet di norma sono i più rapidi (entro 24 ore dopo l&#x27;approvazione), mentre carte e bonifici richiedono 1-5 giorni lavorativi, sempre a verifica KYC completata.</p></details>
+  </article>
+  <div class="clusterFoot"><a href="/">Home</a><a href="/slot/">Slot</a></div>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="payRow">
+      <img src="assets/footer/pay/mastercard.svg" alt="Mastercard" onerror="this.style.display='none'">
+      <img src="assets/footer/pay/visa.svg" alt="Visa" onerror="this.style.display='none'">
+      <img src="assets/footer/pay/pay1.svg" alt="" onerror="this.style.display='none'">
+      <img src="assets/footer/pay/pay2.svg" alt="" onerror="this.style.display='none'">
+      <img src="assets/footer/pay/pay3.svg" alt="" onerror="this.style.display='none'">
+      <img src="assets/footer/pay/pay4.svg" alt="" onerror="this.style.display='none'">
+      <span class="crypto">BTC · ETH · USDT · LTC · TRX · DOGE</span>
+    </div>
+
+    <div class="fnav">
+      <div><h4>Winnita</h4>
+        <a href="/referral-link">Chi siamo</a><a href="/referral-link">Novità</a><a href="/referral-link">Negozio</a><a href="/referral-link">App mobile</a></div>
+      <div><h4>Giochi</h4>
+        <a href="/referral-link">Casinò</a><a href="/referral-link">Slot</a><a href="/referral-link">Casinò Live</a><a href="/referral-link">Scommesse</a></div>
+      <div><h4>Aiuto</h4>
+        <a href="/referral-link">FAQ</a><a href="/referral-link">Termini e condizioni</a><a href="/referral-link">Bonus</a><a href="/referral-link">Recensioni</a></div>
+      <div><h4>Contatti</h4>
+        <a href="mailto:support@winnita.com">support@winnita.com</a>
+        <a href="tel:+393511095005">+39 351 109 5005</a></div>
+    </div>
+
+    <div class="providers">
+      <span class="prov">Pragmatic Play</span><span class="prov">Endorphina</span><span class="prov">Novomatic</span><span class="prov">Evolution</span><span class="prov">Play&#39;n GO</span><span class="prov">NetEnt</span><span class="prov">Spinomenal</span><span class="prov">BGaming</span><span class="prov">Gamzix</span><span class="prov">Wazdan</span><span class="prov">Booming Games</span><span class="prov">Red Tiger</span><span class="prov">Quickspin</span><span class="prov">Playtech</span><span class="prov">Yggdrasil</span><span class="prov">Relax Gaming</span><span class="prov">1spin4win</span><span class="prov">7Mojos</span><span class="prov">Belatra</span><span class="prov">InOut</span><span class="prov">NetGame</span><span class="prov">Slotopia</span>
+    </div>
+
+    <div class="fbottom">
+      <span class="age">18+</span>
+      <span>Il gioco può causare dipendenza patologica. Gioca responsabilmente. Operatore internazionale (non AAMS/ADM) — gioco riservato ai maggiori di 18 anni.</span>
+    </div>
+    <div class="copy">© 2026 WINNITA · Tutti i diritti riservati.</div>
+  </div>
+</footer>
+</body>
+</html>
